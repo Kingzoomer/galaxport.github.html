@@ -64,7 +64,16 @@ nav.footer1 {
     border-radius: 0;
     background:none;
 }
-
+a.footer1{
+    color: #FACC15; /* Star Yellow text */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+        outline:none;
+    border-radius:0;
+    background:none;
+}
 /* ===== BUTTONS OR LINKS (OPTIONAL) ===== */
 button, a {
     background-color: #7C3AED; /* Galactic Purple buttons/links */
