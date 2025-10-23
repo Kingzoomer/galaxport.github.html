@@ -1,38 +1,77 @@
+/* ===== BODY ===== */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #0F172A; /* Deep Space background */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E2E8F0; /* Light Stars text */
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 20px;
+    background-color: #7C3AED; /* Galactic Purple */
+}
+
+h1, h3 {
+    color: #FFFFFF; /* White text for headings */
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+    color: #E2E8F0; /* Light Stars text */
+}
+
+/* ===== NAV GAMES SECTION ===== */
 nav.games {
     margin: 20px 0px 0px 20px;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 1.9%;
 }
 
-/* Container for each game */
-.game-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 110px;           /* Fixed width for uniform boxes */
-    height: 160px;          /* Enough height for image + text */
-    border: 2px solid #7C3AED;
+/* ===== IMAGES ===== */
+img {
+    width: 110px;
+    height: 110px;
     border-radius: 20px;
-    padding: 5px;
-    box-sizing: border-box;
-    text-align: center;
+    border: 2px solid #7C3AED; /* Galactic Purple border */
 }
 
-/* Image inside the container */
-.game-item img {
-    width: 100px;
-    height: 100px;
-    border-radius: 20px;
-    margin-bottom: 5px;
-}
-
-/* Text inside the container */
-.game-item p {
-    color: #E2E8F0;
-    margin: 0;
+/* ===== FOOTER ===== */
+footer {
+    font-size: 110%;
+    padding: 10px 0px;
+    background-color: #0F172A; /* Deep Space background */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(10px, 3vw, 14px); /* Dynamically adjusts based on container width */
-    word-wrap: break-word;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.footer1 {
+    color: #22D3EE; /* Neon Blue text */
+}
+
+/* ===== BUTTONS OR LINKS (OPTIONAL) ===== */
+button, a {
+    background-color: #7C3AED; /* Galactic Purple buttons/links */
+    color: #FACC15; /* Star Yellow text */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    background-color: #22D3EE; /* Neon Blue hover */
+    color: #FFFFFF; /* White text on hover */
 }
