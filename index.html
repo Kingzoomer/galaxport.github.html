@@ -1,9 +1,128 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="home.css">
+
 <title>galaxyport</title>
-<link rel="icon" href="Logo.ico" type="image/x-icon">
+<style>
+/* ===== BODY ===== */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #0F172A; /* Deep Space background */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E2E8F0; /* Light Stars text */
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 20px;
+    background-color: #7C3AED; /* Galactic Purple */
+}
+
+h1, h3 {
+    color: #FFFFFF; /* White text for headings */
+}
+
+/* ===== PARAGRAPHS ===== */
+p {
+    color: #E2E8F0; /* Light Stars text */
+}
+
+/* ===== NAV GAMES SECTION ===== */
+nav.games {
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2% 2%;            /* 5% vertical and 5% horizontal gap */
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* make each game tile a column so gap applies between tiles cleanly */
+nav.games > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    min-width: 120px;     /* prevents tiles from getting too small on narrow screens */
+    flex: 0 1 auto;       /* responsive tiles that don't force equal growth */
+    margin: 1%;         /* 2.5% on each side -> ~5% gap between items horizontally and vertically */
+    padding: 0;
+}
+
+
+/* remove default paragraph margins inside links so gap/row spacing is consistent */
+nav.games a p {
+    margin: 0.25rem 0 0 0;
+    padding: 0;
+}
+
+/* ===== IMAGES ===== */
+img {
+    width: 110px;
+    height: 110px;
+    border-radius: 20px;
+    border: 2px solid #7C3AED; /* Galactic Purple border */
+}
+
+/* ===== FOOTER ===== */
+footer {
+    font-size: 110%;
+    padding: 10px 0px;
+    color: black; /* This makes all <p> text black */
+    font-family: Arial, Helvetica, sans-serif;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline:none;
+    border-radius:0;
+    background:none;
+    row-gap: 100px;
+}
+
+nav.footer1 {
+    color: #22D3EE; /* Neon Blue text */
+    outline:none;
+    border-radius: 0;
+    background:none;
+}
+a.footer1{
+    color: #FACC15; /* Star Yellow text */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+        outline:none;
+    border-radius:0;
+    background:none;
+}
+/* ===== BUTTONS OR LINKS (OPTIONAL) ===== */
+button, a {
+    background-color: #540863; /* Galactic Purple buttons/links */
+    color: #FACC15; /* Star Yellow text */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.4s ease, opacity 0.4s ease; /* prepare smooth transitions */
+}
+
+button:hover, a:hover {
+  background-color: rgba(103, 20, 158, 0.521);
+
+  /* Smooth scale AND fade */
+  transform: scale(1.05);
+  opacity: 0.95;
+}
+
+</style>
 </head>
 <body>
  
@@ -13,20 +132,20 @@
 </header>
 <article>
 <nav class="games">
-<a href="spurkigame.html" style="text-decoration:none"><img src="spurki.png" alt="spurki game logo"><br><p>sprunki</p></a>
-<a href="dinasourgame.html" style="text-decoration:none"><img src="dinasour.png" alt="dinasour game logo"><br><p>dinasour</p></a>
+<a href="spurkigame.html" style="text-decoration:none"><img src="spurki.png" alt="spurki game logo"><br><p>spurki game</p></a>
+<a href="dinasourgame.html" style="text-decoration:none"><img src="dinasour.png" alt="dinasour game logo"><br><p>dinasour game</p></a>
 <a href="XO.html" style="text-decoration:none"><img src="XO.png" alt="XO game logo"><br><p>X O</p></a>
-<a href="tower defence.html" style="text-decoration:none"><img src="tower defence.png" alt="tower defence game logo"><br><p>tower.defence</p></a>
-<a href="geometrydash.html" style="text-decoration:none"><img src="geometrydash.png" alt="geometry dash game logo"><br><p>geometry.dash</p></a>
-<a href="snake.html" style="text-decoration:none"><img src="snake.png" alt="snake game logo"><br><p>snake</p></a>
+<a href="tower defence.html" style="text-decoration:none"><img src="tower defence.png" alt="tower defence game logo"><br><p>tower defence</p></a>
+<a href="geometrydash.html" style="text-decoration:none"><img src="geometrydash.png" alt="geometry dash game logo"><br><p>geometry dash</p></a>
+<a href="snake.html" style="text-decoration:none"><img src="snake.png" alt="snake game logo"><br><p>snake game</p></a>
 <a href="maze.html" style="text-decoration:none"><img src="maze.png" alt="maze game logo"><br><p>3d maze</p></a>
-<a href="motorgame.html" style="text-decoration:none"><img src="motorgame.png" alt="motor game logo"><br><p>3d motor</p></a>
-<a href="tower climber.html" style="text-decoration:none"><img src="tower climber.png" alt="climb game logo"><br><p>tower.climber</p></a>
+<a href="motorgame.html" style="text-decoration:none"><img src="motorgame.png" alt="motor game logo"><br><p>3d motor game</p></a>
+<a href="tower climber.html" style="text-decoration:none"><img src="tower climber.png" alt="climb game logo"><br><p>tower climber</p></a>
 
 
-<a  href="fruitcut.html" style="text-decoration:none"><img src="fruitcut.png" alt="cut a fruit game logo"><br><p>fruit cutting</p></a>
-<a  href="stickman hook.html" style="text-decoration:none"><img src="stickman hook.png" alt="stickman hook game logo"><br><p>stickman hook</p></a>
-<a  href="lazer doge.html" style="text-decoration:none"><img src="lazer doge.png" alt="lazer doge game logo"><br><p>doge.the.lazer</p></a>
+<a href="fruitcut.html" style="text-decoration:none"><img src="fruitcut.png" alt="cut a fruit game logo"><br><p>fruit cutting game</p></a>
+<a href="stickman hook.html" style="text-decoration:none"><img src="stickman hook.png" alt="stickman hook game logo"><br><p>stickman hook</p></a>
+<a href="lazer doge.html" style="text-decoration:none"><img src="lazer doge.png" alt="lazer doge game logo"><br><p>doge the lazer</p></a>
 </nav>
 
 </article>
@@ -46,13 +165,13 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
--->
+ -->
 <footer>
-<nav class="footer1">
- <center><a class="footer1" href="credits.html" style="text-decoration:none">credits/creator</a></center>       
- <center><a class="footer1" href="learnmore.html" style="text-decoration:none">learnmore</a></center>       
- <center><a class="footer1" href="privacy.html" style="text-decoration:none">privacy/ policy</a></center>       
-</nav>
+    <nav class="footer1" style="display:flex; flex-direction:column; row-gap:0.5rem; align-items:center; text-align:center;">
+        <a href="credits.html" style="text-decoration:none;">credits/creator</a>
+        <a href="learnmore.html" style="text-decoration:none;">learnmore</a>
+        <a href="privacy.html" style="text-decoration:none;">privacy policy</a>
+    </nav>
 </footer>
 
 
@@ -60,14 +179,6 @@
 
 
 </html>
-
-
-
-
-
-
-
-
 
 
 
